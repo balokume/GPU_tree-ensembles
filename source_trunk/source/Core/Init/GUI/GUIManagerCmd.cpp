@@ -17,7 +17,7 @@ namespace DataMiner{
 				}
 			}
 
-			str = str.substr(pos+1,str.find_last_of('.')-(pos+1));
+			str = str.substr(0,str.find_last_of('.'));
 			ConfigManager::writeToFile(std::string(message.begin(),message.end()),std::string(str.begin(),str.end())+"_output.txt",std::ios_base::trunc);
 		}
 		m_settings[id] = message;

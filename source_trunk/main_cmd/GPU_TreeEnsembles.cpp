@@ -44,5 +44,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	mainFramework.reset();
 	DataMiner::ThreadManager::shutdown();
+
+	system("pause");
 	return (int) 1;
 }
