@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main_Cmd">
+      <UniqueIdentifier>{DA33F55C-3409-614D-9FFF-2B84F24723F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{2C9F8796-BD49-174A-8710-9999ABDF0FB3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Algorithms">
+      <UniqueIdentifier>{946DB7CB-3320-524C-B534-61D4BED41E95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Algorithms\Evaluation">
+      <UniqueIdentifier>{023C10BD-7CE1-B047-AAFB-15F629440A04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Algorithms\RandomForest">
+      <UniqueIdentifier>{BC0FAAD5-E07E-374B-8899-87B0D7ABE7C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Algorithms\RandomForest\GPURandomForest">
+      <UniqueIdentifier>{EDE9CD64-2918-3445-A804-FEB94C30E538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions">
+      <UniqueIdentifier>{598635B5-7CC4-3242-877F-644C6A2FDCB8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates">
+      <UniqueIdentifier>{C6CBD5CA-0E83-B64C-8474-2582927CFB15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Algorithms\RandomForest\SerialCPU">
+      <UniqueIdentifier>{3B7ABCD2-2986-8045-8605-6BBA1FA2CE13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{CB5D8056-9259-8F4E-84FC-0A59B1651BA0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Init">
+      <UniqueIdentifier>{C228D811-BF0E-E541-9EAC-8C20717F3114}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Init\GUI">
+      <UniqueIdentifier>{10C926AE-E0C1-E245-A816-CF542DC867C2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Init\GUI\MinerGUI">
+      <UniqueIdentifier>{D61F1215-FC5A-C049-8902-64EB91067669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Init\GUI\MinerGUI\ClickFunctions">
+      <UniqueIdentifier>{79BB4F13-035D-4042-86E3-B9070D48A39D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\Init\GUI\Windows">
+      <UniqueIdentifier>{BF875DB1-3811-0B49-A6C1-DDB600169751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\MessageManager">
+      <UniqueIdentifier>{39CCFB8F-178C-5A43-BA68-3BE551D7C311}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\MessageManager\DataPacks">
+      <UniqueIdentifier>{F64445F3-4A61-F741-A628-D5700074516E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\MessageManager\Handlers">
+      <UniqueIdentifier>{E3C71BE0-DC2F-724D-914C-2FD3CA8012B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\MessageManager\Messages">
+      <UniqueIdentifier>{C43DA8BA-6A73-6340-8B03-5959C8156827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core\ThreadManager">
+      <UniqueIdentifier>{404AD71C-146A-8840-B4A1-2FEF29C0ED14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GraphicsManager">
+      <UniqueIdentifier>{A996BF7D-75F8-2D42-8202-9E343EE1272F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GraphicsManager\CUDA">
+      <UniqueIdentifier>{08594F2E-2807-9649-AC97-233FC0AD27F6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GraphicsManager\DX11">
+      <UniqueIdentifier>{17E28DDC-E72A-F84A-9327-6569A334CD9F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GraphicsManager\OpenCL">
+      <UniqueIdentifier>{C280FAC9-F3C2-D445-89C5-41B0FCA83BFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Precomp">
+      <UniqueIdentifier>{861E0F79-ABFF-444F-ABB1-C48346984C16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ResourceManager">
+      <UniqueIdentifier>{83804833-FBCA-184F-80D4-AECCA9459A30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ResourceManager\Data">
+      <UniqueIdentifier>{BECB3239-55E2-C04F-AA67-93C4401B4DD8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ResourceManager\Parsers">
+      <UniqueIdentifier>{44E7155F-2561-6B49-8E29-D6344E56DF1A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\ResourceManager\Parsers\Interface">
+      <UniqueIdentifier>{B4C1306D-07BE-5B4D-AB09-AAF0D6FB42D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel_code">
+      <UniqueIdentifier>{A21354A6-1790-AB4C-81AC-7159E7406E64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel_code\CUDA">
+      <UniqueIdentifier>{38F8A1FE-3C17-B64E-9461-02D59AC81A46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kernel_code\CUDA\RandomForest">
+      <UniqueIdentifier>{0404F22F-B593-4144-B5F5-30257BDCB223}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\kernel_code\CUDA\cuda_Common_Include.cu">
+      <Filter>kernel_code\CUDA</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\cuda_Common_RNG.cu">
+      <Filter>kernel_code\CUDA</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Constants.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_Bagging.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_Classify.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_EvaluateSplit.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_ExtremeCreateNodes.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_ExtremeFindSplit.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_ExtremeMakeSplit.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_FindSplit.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_Sort.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_SplitData.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+    <None Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Wrappers.cu">
+      <Filter>kernel_code\CUDA\RandomForest</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Main_Cmd\HandlerStandard.h">
+      <Filter>Main_Cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Main_Cmd\IHandlerCmd.h">
+      <Filter>Main_Cmd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\IAlgorithm.h">
+      <Filter>Source\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\IResultWriter.h">
+      <Filter>Source\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\Evaluation\CrossValidation.h">
+      <Filter>Source\Algorithms\Evaluation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\Evaluation\IEvaluation.h">
+      <Filter>Source\Algorithms\Evaluation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\Evaluation\NoEvaluation.h">
+      <Filter>Source\Algorithms\Evaluation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\Evaluation\PercentageSplit.h">
+      <Filter>Source\Algorithms\Evaluation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\Bagger.h">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\DataCache.h">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\ExRandomTrees.h">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\ExTree.h">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\ExTreeNode.h">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\RandomForest.h">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\RandomTree.h">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\VoteCollector.h">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPUERT.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPURandomForest.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPURF.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestBagging.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestBuild.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestClassify.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestEvaluateSplit.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestExCreateNodes.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestExFindSplit.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestExMakeSplit.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestFindSplit.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestKeplerBuild.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestSort.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestSplitData.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates\CUDA_RandomForestUpdateConstants.h">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\SerialCPU\SerialRandomTree.h">
+      <Filter>Source\Algorithms\RandomForest\SerialCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Algorithms\RandomForest\SerialCPU\SerialTreeNode.h">
+      <Filter>Source\Algorithms\RandomForest\SerialCPU</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\ConfigManager.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\MainFramework.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\GUIManager.h">
+      <Filter>Source\Core\Init\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\GUIManagerCmd.h">
+      <Filter>Source\Core\Init\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\GUIManagerWinAPI.h">
+      <Filter>Source\Core\Init\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\MinerGUI.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\WindowIds.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonAddRunScheme.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonLoadDataFile.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonLoadScheme.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonRemoveScheme.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonRunAlgorithm.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonRunScheme.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonStopAlgorithm.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ComboAlgorithmChoice.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\Runnable.h">
+      <Filter>Source\Core\Init\GUI\MinerGUI\ClickFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\Windows\GUIGroup.h">
+      <Filter>Source\Core\Init\GUI\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\Init\GUI\Windows\GUIWindow.h">
+      <Filter>Source\Core\Init\GUI\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\MessageManager\DataPacks\AlgorithmDataPack.h">
+      <Filter>Source\Core\MessageManager\DataPacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\MessageManager\DataPacks\IDataPack.h">
+      <Filter>Source\Core\MessageManager\DataPacks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\MessageManager\Handlers\MessageHandler.h">
+      <Filter>Source\Core\MessageManager\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\MessageManager\Handlers\StartAlgorithmMessageHandler.h">
+      <Filter>Source\Core\MessageManager\Handlers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\MessageManager\Messages\FrameworkMessage.h">
+      <Filter>Source\Core\MessageManager\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\MessageManager\Messages\StartAlgorithmMessage.h">
+      <Filter>Source\Core\MessageManager\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\MessageManager\Messages\StopAlgorithmMessage.h">
+      <Filter>Source\Core\MessageManager\Messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Core\ThreadManager\ThreadManager.h">
+      <Filter>Source\Core\ThreadManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\GraphicsManager\GraphicsFunction.h">
+      <Filter>Source\GraphicsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\GraphicsManager\GraphicsManager.h">
+      <Filter>Source\GraphicsManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\GraphicsManager\CUDA\CUDAManager.h">
+      <Filter>Source\GraphicsManager\CUDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\GraphicsManager\DX11\DirectXManager.h">
+      <Filter>Source\GraphicsManager\DX11</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\GraphicsManager\OpenCL\OpenCLManager.h">
+      <Filter>Source\GraphicsManager\OpenCL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Precomp\customTypes.h">
+      <Filter>Source\Precomp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Precomp\stdafx.h">
+      <Filter>Source\Precomp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\Precomp\targetver.h">
+      <Filter>Source\Precomp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\ResourceManager.h">
+      <Filter>Source\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\Data\Attribute.h">
+      <Filter>Source\ResourceManager\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\Data\DataDocument.h">
+      <Filter>Source\ResourceManager\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\Data\Instance.h">
+      <Filter>Source\ResourceManager\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\Data\Value.h">
+      <Filter>Source\ResourceManager\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\Parsers\ParserARFF.h">
+      <Filter>Source\ResourceManager\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\Parsers\ParserRaw.h">
+      <Filter>Source\ResourceManager\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\Parsers\ParserRDS.h">
+      <Filter>Source\ResourceManager\Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\ResourceManager\Parsers\Interface\IParser.h">
+      <Filter>Source\ResourceManager\Parsers\Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Main_Cmd\GPU_TreeEnsembles.cpp">
+      <Filter>Main_Cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Main_Cmd\HandlerStandard.cpp">
+      <Filter>Main_Cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Main_Cmd\IHandlerCmd.cpp">
+      <Filter>Main_Cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\IAlgorithms.cpp">
+      <Filter>Source\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\IResultWriter.cpp">
+      <Filter>Source\Algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\Evaluation\CrossValidation.cpp">
+      <Filter>Source\Algorithms\Evaluation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\Evaluation\IEvaluation.cpp">
+      <Filter>Source\Algorithms\Evaluation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\Evaluation\NoEvaluation.cpp">
+      <Filter>Source\Algorithms\Evaluation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\Evaluation\PercentageSplit.cpp">
+      <Filter>Source\Algorithms\Evaluation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\Bagger.cpp">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\DataCache.cpp">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\ExRandomTrees.cpp">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\RandomForest.cpp">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\RandomTree.cpp">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\VoteCollector.cpp">
+      <Filter>Source\Algorithms\RandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPUERT.cpp">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPURandomForest.cpp">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPURF.cpp">
+      <Filter>Source\Algorithms\RandomForest\GPURandomForest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\SerialCPU\SerialRandomTree.cpp">
+      <Filter>Source\Algorithms\RandomForest\SerialCPU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\ConfigManager.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\MainFramework.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\GUIManager.cpp">
+      <Filter>Source\Core\Init\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\GUIManagerCmd.cpp">
+      <Filter>Source\Core\Init\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\GUIManagerWinAPI.cpp">
+      <Filter>Source\Core\Init\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\MinerGUI\MinerGUI.cpp">
+      <Filter>Source\Core\Init\GUI\MinerGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\Windows\GUIGroup.cpp">
+      <Filter>Source\Core\Init\GUI\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\Windows\GUIWindow.cpp">
+      <Filter>Source\Core\Init\GUI\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\MessageManager\Handlers\StartAlgorithmMessageHandler.cpp">
+      <Filter>Source\Core\MessageManager\Handlers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\ThreadManager\ThreadManager.cpp">
+      <Filter>Source\Core\ThreadManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\GraphicsManager\CUDA\CUDAManager.cpp">
+      <Filter>Source\GraphicsManager\CUDA</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\GraphicsManager\DX11\DirectXManager.cpp">
+      <Filter>Source\GraphicsManager\DX11</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\GraphicsManager\OpenCL\OpenCLManager.cpp">
+      <Filter>Source\GraphicsManager\OpenCL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Precomp\stdafx.cpp">
+      <Filter>Source\Precomp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\ResourceManager.cpp">
+      <Filter>Source\ResourceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Data\Attribute.cpp">
+      <Filter>Source\ResourceManager\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Data\DataDocument.cpp">
+      <Filter>Source\ResourceManager\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Data\Instance.cpp">
+      <Filter>Source\ResourceManager\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Parsers\ParserARFF.cpp">
+      <Filter>Source\ResourceManager\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Parsers\ParserRaw.cpp">
+      <Filter>Source\ResourceManager\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Parsers\ParserRDS.cpp">
+      <Filter>Source\ResourceManager\Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Parsers\Interface\IParser.cpp">
+      <Filter>Source\ResourceManager\Parsers\Interface</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

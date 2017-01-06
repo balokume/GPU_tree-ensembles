@@ -1,0 +1,533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Win32">
+      <Configuration>Distribution</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}</ProjectGuid>
+    <RootNamespace>GPU_DataMining_CMD</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Build_Output\Debug\</OutDir>
+    <IntDir>obj\x32\Debug\</IntDir>
+    <TargetName>dataMiner_cmd</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\Build_Output\Debug\</OutDir>
+    <IntDir>obj\x64\Debug\</IntDir>
+    <TargetName>dataMiner_cmd</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\Build_Output\Release\</OutDir>
+    <IntDir>obj\x32\Release\</IntDir>
+    <TargetName>dataMiner_cmd</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\Build_Output\Release\</OutDir>
+    <IntDir>obj\x64\Release\</IntDir>
+    <TargetName>dataMiner_cmd</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\libs\boost_1_60_0;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\libs\boost_1_60_0\stage\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|Win32'">
+    <OutDir>..\Build_Output\Distribution\x32\</OutDir>
+    <IntDir>obj\x32\Distribution\</IntDir>
+    <TargetName>dataMiner_cmd</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <OutDir>..\Build_Output\Distribution\x64\</OutDir>
+    <IntDir>obj\x64\Distribution\</IntDir>
+    <TargetName>dataMiner_cmd</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-Zm112 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)dataMiner_cmd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cuda.lib;cudart.lib;d3d11.lib;dxgi.lib;OpenCL.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)dataMiner_cmd.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependencies\boost\stage\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0lib\Win32;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>-Zm112 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)dataMiner_cmd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cuda.lib;cudart.lib;d3d11.lib;dxgi.lib;OpenCL.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)dataMiner_cmd.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependencies\boost\stage64\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0lib\x64;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)dataMiner_cmd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>cuda.lib;cudart.lib;d3d11.lib;dxgi.lib;OpenCL.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)dataMiner_cmd.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependencies\boost\stage\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0lib\Win32;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)dataMiner_cmd.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>cuda.lib;cudart.lib;d3d11.lib;dxgi.lib;OpenCL.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)dataMiner_cmd.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependencies\boost\stage64\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0lib\x64;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>cuda.lib;cudart.lib;d3d11.lib;dxgi.lib;OpenCL.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)dataMiner_cmd.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependencies\boost\stage\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0lib\Win32;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">
+    <ClCompile>
+      <AdditionalOptions>/MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Main_Cmd;..\Source\Core;..\Source\Core\Init;..\Source\Core\Init\GUI;..\Source\Core\Init\GUI\MinerGUI;..\Source\Core\Init\GUI\MinerGUI\ClickFunctions;..\Source\Core\Init\GUI\Windows;..\Source\Core\Init\MiningUtilities;..\Source\Core\MessageManager;..\Source\Core\MessageManager\DataPacks;..\Source\Core\MessageManager\Handlers;..\Source\Core\MessageManager\Messages;..\Source\Core\ThreadManager;..\Source\Algorithms;..\Source\Algorithms\Evaluation;..\Source\Algorithms\RandomForest;..\Source\Algorithms\RandomForest\GPURandomForest;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions;..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates;..\Source\Algorithms\RandomForest\RecursiveCPU;..\Source\Algorithms\RandomForest\SerialCPU;..\Source\Algorithms\SVM;..\Source\Algorithms\SVM\Kernels;..\Source\Algorithms\SVM\CUDAFunctions;..\Source\GraphicsManager;..\Source\GraphicsManager\CUDA;..\Source\GraphicsManager\DX11;..\Source\GraphicsManager\OpenCL;..\Source\Precomp;..\Source\ResourceManager;..\Source\ResourceManager\Data;..\Source\ResourceManager\Parsers;..\Source\ResourceManager\Parsers\Interface;..\..\..\Dependencies\boost;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0include;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>cuda.lib;cudart.lib;d3d11.lib;dxgi.lib;OpenCL.lib;Psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)dataMiner_cmd.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Dependencies\boost\stage64\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0lib\x64;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Main_Cmd\HandlerStandard.h" />
+    <ClInclude Include="..\Main_Cmd\IHandlerCmd.h" />
+    <ClInclude Include="..\Source\Algorithms\IAlgorithm.h" />
+    <ClInclude Include="..\Source\Algorithms\IResultWriter.h" />
+    <ClInclude Include="..\Source\Algorithms\Evaluation\CrossValidation.h" />
+    <ClInclude Include="..\Source\Algorithms\Evaluation\IEvaluation.h" />
+    <ClInclude Include="..\Source\Algorithms\Evaluation\NoEvaluation.h" />
+    <ClInclude Include="..\Source\Algorithms\Evaluation\PercentageSplit.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\Bagger.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\DataCache.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\ExRandomTrees.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\ExTree.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\ExTreeNode.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\RandomForest.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\RandomTree.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\VoteCollector.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPUERT.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPURandomForest.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPURF.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestBagging.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestBuild.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestClassify.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestEvaluateSplit.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestExCreateNodes.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestExFindSplit.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestExMakeSplit.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestFindSplit.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestKeplerBuild.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestSort.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\CUDA_RandomForestSplitData.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\GPURandomForest\CUDAFunctions\ConstantUpdates\CUDA_RandomForestUpdateConstants.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\SerialCPU\SerialRandomTree.h" />
+    <ClInclude Include="..\Source\Algorithms\RandomForest\SerialCPU\SerialTreeNode.h" />
+    <ClInclude Include="..\Source\Core\ConfigManager.h" />
+    <ClInclude Include="..\Source\Core\MainFramework.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\GUIManager.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\GUIManagerCmd.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\GUIManagerWinAPI.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\MinerGUI.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\WindowIds.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonAddRunScheme.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonLoadDataFile.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonLoadScheme.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonRemoveScheme.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonRunAlgorithm.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonRunScheme.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ButtonStopAlgorithm.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\ComboAlgorithmChoice.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\MinerGUI\ClickFunctions\Runnable.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\Windows\GUIGroup.h" />
+    <ClInclude Include="..\Source\Core\Init\GUI\Windows\GUIWindow.h" />
+    <ClInclude Include="..\Source\Core\MessageManager\DataPacks\AlgorithmDataPack.h" />
+    <ClInclude Include="..\Source\Core\MessageManager\DataPacks\IDataPack.h" />
+    <ClInclude Include="..\Source\Core\MessageManager\Handlers\MessageHandler.h" />
+    <ClInclude Include="..\Source\Core\MessageManager\Handlers\StartAlgorithmMessageHandler.h" />
+    <ClInclude Include="..\Source\Core\MessageManager\Messages\FrameworkMessage.h" />
+    <ClInclude Include="..\Source\Core\MessageManager\Messages\StartAlgorithmMessage.h" />
+    <ClInclude Include="..\Source\Core\MessageManager\Messages\StopAlgorithmMessage.h" />
+    <ClInclude Include="..\Source\Core\ThreadManager\ThreadManager.h" />
+    <ClInclude Include="..\Source\GraphicsManager\GraphicsFunction.h" />
+    <ClInclude Include="..\Source\GraphicsManager\GraphicsManager.h" />
+    <ClInclude Include="..\Source\GraphicsManager\CUDA\CUDAManager.h" />
+    <ClInclude Include="..\Source\GraphicsManager\DX11\DirectXManager.h" />
+    <ClInclude Include="..\Source\GraphicsManager\OpenCL\OpenCLManager.h" />
+    <ClInclude Include="..\Source\Precomp\customTypes.h" />
+    <ClInclude Include="..\Source\Precomp\stdafx.h" />
+    <ClInclude Include="..\Source\Precomp\targetver.h" />
+    <ClInclude Include="..\Source\ResourceManager\ResourceManager.h" />
+    <ClInclude Include="..\Source\ResourceManager\Data\Attribute.h" />
+    <ClInclude Include="..\Source\ResourceManager\Data\DataDocument.h" />
+    <ClInclude Include="..\Source\ResourceManager\Data\Instance.h" />
+    <ClInclude Include="..\Source\ResourceManager\Data\Value.h" />
+    <ClInclude Include="..\Source\ResourceManager\Parsers\ParserARFF.h" />
+    <ClInclude Include="..\Source\ResourceManager\Parsers\ParserRaw.h" />
+    <ClInclude Include="..\Source\ResourceManager\Parsers\ParserRDS.h" />
+    <ClInclude Include="..\Source\ResourceManager\Parsers\Interface\IParser.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Main_Cmd\GPU_TreeEnsembles.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Main_Cmd\HandlerStandard.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Main_Cmd\IHandlerCmd.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\IAlgorithms.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\IResultWriter.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\Evaluation\CrossValidation.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\Evaluation\IEvaluation.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\Evaluation\NoEvaluation.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\Evaluation\PercentageSplit.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\Bagger.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\DataCache.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\ExRandomTrees.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\RandomForest.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\RandomTree.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\VoteCollector.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPUERT.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPURandomForest.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\GPURandomForest\GPURF.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Algorithms\RandomForest\SerialCPU\SerialRandomTree.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\ConfigManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\MainFramework.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\GUIManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\GUIManagerCmd.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\GUIManagerWinAPI.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\MinerGUI\MinerGUI.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\Windows\GUIGroup.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\Init\GUI\Windows\GUIWindow.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\MessageManager\Handlers\StartAlgorithmMessageHandler.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Core\ThreadManager\ThreadManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\GraphicsManager\CUDA\CUDAManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\GraphicsManager\DX11\DirectXManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\GraphicsManager\OpenCL\OpenCLManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\Precomp\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Distribution|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\ResourceManager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Data\Attribute.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Data\DataDocument.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Data\Instance.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Parsers\ParserARFF.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Parsers\ParserRaw.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Parsers\ParserRDS.cpp">
+    </ClCompile>
+    <ClCompile Include="..\Source\ResourceManager\Parsers\Interface\IParser.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="..\kernel_code\CUDA\cuda_Common_Include.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\cuda_Common_RNG.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Constants.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_Bagging.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_Classify.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_EvaluateSplit.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_ExtremeCreateNodes.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_ExtremeFindSplit.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_ExtremeMakeSplit.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_FindSplit.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_Sort.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Kernel_SplitData.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+    <CudaCompile Include="..\kernel_code\CUDA\RandomForest\cuda_RandomForest_Wrappers.cu">
+      <FileType>Document</FileType>
+    </CudaCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.targets" />
+  </ImportGroup>
+</Project>

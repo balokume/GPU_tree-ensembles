@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GPU_DataMining_CMD", "GPU_DataMining_CMD.vcxproj", "{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Distribution|Win32 = Distribution|Win32
+		Distribution|x64 = Distribution|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Debug|Win32.Build.0 = Debug|Win32
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Debug|x64.ActiveCfg = Debug|x64
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Debug|x64.Build.0 = Debug|x64
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Release|Win32.ActiveCfg = Release|Win32
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Release|Win32.Build.0 = Release|Win32
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Release|x64.ActiveCfg = Release|x64
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Release|x64.Build.0 = Release|x64
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Distribution|Win32.ActiveCfg = Distribution|Win32
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Distribution|Win32.Build.0 = Distribution|Win32
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Distribution|x64.ActiveCfg = Distribution|x64
+		{A3593D82-FE8F-F648-B313-BB7F3CEE8D8B}.Distribution|x64.Build.0 = Distribution|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
